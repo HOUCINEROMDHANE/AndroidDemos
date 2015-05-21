@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.magictools.android.demo.MainActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/main_screen_btn_header"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/btn_back"
+            android:singleLine="true"
+            android:text="Native Demos" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="&lt; Back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.93"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/main_image"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.79"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/sub_image_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+
+                <ImageView
+                    android:id="@+id/sub_image_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/sub_image_2"
+                    android:layout_toRightOf="@+id/sub_image_2"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+
+                <ImageView
+                    android:id="@+id/sub_image_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/sub_image_1"
+                    android:layout_toRightOf="@+id/sub_image_1"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+
+                <ImageView
+                    android:id="@+id/sub_image_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/sub_image_3"
+                    android:layout_toRightOf="@+id/sub_image_3"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+
+                <ImageView
+                    android:id="@+id/sub_image_5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/sub_image_3"
+                    android:layout_toRightOf="@+id/sub_image_4"
+                    android:src="@drawable/abc_list_longpressed_holo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="14dp"
+                android:background="#FFFFFF" >
+
+			    <TextView
+			        android:id="@+id/phone_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentStart="true"
+			        android:text="Phone Name"
+			        android:textSize="25sp" />
+
+			    <TextView
+			        android:id="@+id/phone_description"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_name"
+			        android:text="Description"
+			        android:textSize="12sp" />
+
+			    <TextView
+			        android:id="@+id/phone_additionalFeatures"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_description"
+			        android:text="Additional Features"
+			        android:textSize="25sp" />
+
+			    <TextView
+			        android:id="@+id/phone_additionalFeatures_detail"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_additionalFeatures"
+			        android:text="details"
+			        android:textSize="12sp" />
+
+			    <TextView
+			        android:id="@+id/phone_android"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_additionalFeatures_detail"
+			        android:text="Android"
+			        android:textSize="25sp" />
+
+			    <TextView
+			        android:id="@+id/phone_android_os"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_android"
+			        android:text="details"
+			        android:textSize="12sp" />
+
+			    <TextView
+			        android:id="@+id/phone_android_ui"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentStart="true"
+			        android:layout_below="@+id/phone_android_os"
+			        android:text="details"
+			        android:textSize="12sp" />
+			    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="(c) 2015 Houcine Romdhane" />
+    </RelativeLayout>
+</RelativeLayout>

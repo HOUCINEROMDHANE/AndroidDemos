@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.magictools.android.demo.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/main_screen_btn_header"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/main_screen_btn_exit"
+            android:singleLine="true"
+            android:text="Native Demos" />
+
+        <Button
+            android:id="@+id/main_screen_btn_exit"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/ListViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF" >
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="(c) 2015 Houcine Romdhane" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CircleListActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/main_screen_btn_header"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/btn_back"
+            android:singleLine="true"
+            android:text="Native Demos" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="&lt; Back" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout10"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#C1E1F2"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	        
+	        <TextView
+		        android:textColor="#FF0000"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_gravity="left"
+	            android:text="Rotate the screen to see the MutiPane View." />
+	    </RelativeLayout>
+        
+	    <fragment
+	        android:id="@+id/circle_list"
+	        android:name="com.magictools.android.demo.multipane.CircleListFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/relativeLayout10"
+	        tools:context=".CircleListActivity" />
+
+	 </RelativeLayout>
+	 
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#407D82" >
+
+        <Button
+            android:id="@+id/Button02"
+            style="@style/btnStyleGenoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="(c) 2015 Houcine Romdhane" />
+    </RelativeLayout>
+</RelativeLayout>
